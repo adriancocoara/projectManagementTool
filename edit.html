@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sprint Page</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <header class="header">
+                <div class="container">
+                    <h1 class="header__title">Project Management Tool</h1>
+                </div>
+        </header>
+        <a href="/index.html">Home</a>
+        <input id="sprint-name" placeholder="Sprint name">
+        <span id="last-edited"></span>
+        <textarea id="sprint-body" placeholder="Enter comments"></textarea>
+        <button id="remove-sprint">Remove sprint</button>
+        <h1>Issues</h1>
+        <input id="search-issues" type="text" placeholder="Search issues">
+        <div id="issues"></div>
+        <form id="add-issue">
+            <input type="text" placeholder="Add new issue" name="firstIssue">
+            <button>Add issue</button>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.js"></script>
+        <script src="./scripts/uuidv4.js"></script>
+        <script src="./scripts/issues-functions.js"></script>
+        <script src="./scripts/issues.js"></script>
+        <script src="./scripts/sprint-functions.js"></script>
+        <script src="./scripts/sprint-edit.js"></script>
+    </body>
+</html>
